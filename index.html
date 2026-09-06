@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CeskynoobProductions | Technology & Creative Studio</title>
+    <meta name="description" content="CeskynoobProductions - A premium technology and creative studio specializing in game development, software, design, AI, and digital media.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Exo+2:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-banner" class="cookie-banner">
+        <div class="cookie-content">
+            <h3>Cookie Consent</h3>
+            <p>This website uses cookies to enhance your experience and analyze site performance. By continuing to browse, you agree to our use of cookies.</p>
+            <div class="cookie-buttons">
+                <button id="accept-all" class="btn btn-primary">Accept All</button>
+                <button id="reject-non-essential" class="btn btn-secondary">Reject Non-Essential</button>
+                <button id="cookie-settings" class="btn btn-outline">Cookie Settings</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cookie Settings Modal -->
+    <div id="cookie-modal" class="cookie-modal">
+        <div class="cookie-modal-content">
+            <div class="cookie-modal-header">
+                <h3>Cookie Settings</h3>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="cookie-settings-container">
+                <div class="cookie-category">
+                    <div class="cookie-toggle">
+                        <label class="switch">
+                            <input type="checkbox" id="essential-cookies" checked disabled>
+                            <span class="slider round"></span>
+                        </label>
+                        <div>
+                            <h4>Essential Cookies</h4>
+                            <p>These cookies are essential for the website to function properly. They enable core functionality like page navigation and access to secure areas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cookie-category">
+                    <div class="cookie-toggle">
+                        <label class="switch">
+                            <input type="checkbox" id="analytics-cookies">
+                            <span class="slider round"></span>
+                        </label>
+                        <div>
+                            <h4>Analytics Cookies</h4>
+                            <p>These cookies help us understand how visitors interact with our website by collecting and reporting information anonymously.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cookie-category">
+                    <div class="cookie-toggle">
+                        <label class="switch">
+                            <input type="checkbox" id="functional-cookies">
+                            <span class="slider round"></span>
+                        </label>
+                        <div>
+                            <h4>Functional Cookies</h4>
+                            <p>These cookies allow the website to remember choices you make and provide enhanced, more personal features.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cookie-modal-footer">
+                <button id="save-cookies" class="btn btn-primary">Save Preferences</button>
+                <button id="accept-all-cookies" class="btn btn-secondary">Accept All</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div id="custom-cursor" class="cursor"></div>
+    <div id="cursor-follower" class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav id="main-nav" class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">CeskynoobProductions</a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#team" class="nav-link">Team</a></li>
+                <li><a href="#privacy" class="nav-link">Privacy</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="grid-overlay"></div>
+            <div class="particles"></div>
+            <div class="gradient-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">CeskynoobProductions</h1>
+                <p class="hero-subtitle">Technology meets creativity</p>
+                <p class="hero-description">We craft innovative digital experiences that blend cutting-edge technology with artistic vision.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary hero-btn">Explore Our Work</a>
+                    <a href="#services" class="btn btn-outline hero-btn">Our Services</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Us</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>CeskynoobProductions is a creative technology company with 15 dedicated professionals working across multiple disciplines.</p>
+                    <p>Our team specializes in software development, game creation, media production, graphic design, AI projects, web development, content creation, streaming, and digital marketing.</p>
+                    <p>We are committed to privacy-first practices, ensuring that our clients' data remains secure while delivering exceptional creative solutions.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <span class="stat-number" data-target="15">0</span>
+                        <span class="stat-label">Team Members</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" data-target="10">0</span>
+                        <span class="stat-label">Services</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" data-target="50">0</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Services</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="services-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="technology">Technology</button>
+                <button class="filter-btn" data-filter="creative">Creative</button>
+                <button class="filter-btn" data-filter="media">Media</button>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-category="technology">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M20 10V14C20 17.3137 17.3137 20 14 20H10C6.68629 20 4 17.3137 4 14V10C4 6.68629 6.68629 4 10 4H14C17.3137 4 20 6.68629 20 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Game Development</h3>
+                    <p class="service-description">Creating immersive gaming experiences with cutting-edge technology and innovative gameplay mechanics.</p>
+                </div>
+                <div class="service-card" data-category="technology">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 20L14 4M19 7L5 7M19 17L5 17M14 4V20M10 4V20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Programming</h3>
+                    <p class="service-description">Developing robust software solutions and applications tailored to your specific business needs.</p>
+                </div>
+                <div class="service-card" data-category="creative">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V15Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 10L15 7L12 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Graphic Design</h3>
+                    <p class="service-description">Crafting visually stunning designs that communicate your brand message effectively.</p>
+                </div>
+                <div class="service-card" data-category="creative">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 18C9 18 10.5 15 12 15C13.5 15 15 18 15 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Music Production</h3>
+                    <p class="service-description">Creating compelling soundscapes and musical compositions for games, media, and digital platforms.</p>
+                </div>
+                <div class="service-card" data-category="media">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 10L21 4M21 4H17M21 4V8M15 10L9 16M9 16H5M9 16V12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Video Production</h3>
+                    <p class="service-description">Producing high-quality video content for streaming, marketing, and digital storytelling.</p>
+                </div>
+                <div class="service-card" data-category="technology">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 12H5M12 19V5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">AI Projects</h3>
+                    <p class="service-description">Developing innovative AI solutions that enhance user experiences and automate complex processes.</p>
+                </div>
+                <div class="service-card" data-category="technology">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V4C20 3.46957 19.7893 2.96086 19.4142 2.58579C19.0391 2.21071 18.5304 2 18 2H14Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Web Development</h3>
+                    <p class="service-description">Building responsive, secure, and performant websites that deliver exceptional user experiences.</p>
+                </div>
+                <div class="service-card" data-category="creative">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 15L17 20L22 15M12 15L7 20L2 15M12 15V3M12 15L9 12M12 15L15 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Content Creation</h3>
+                    <p class="service-description">Developing engaging content strategies that resonate with your target audience across all platforms.</p>
+                </div>
+                <div class="service-card" data-category="media">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M20 10V14C20 17.3137 17.3137 20 14 20H10C6.68629 20 4 17.3137 4 14V10C4 6.68629 6.68629 4 10 4H14C17.3137 4 20 6.68629 20 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Streaming</h3>
+                    <p class="service-description">Creating engaging streaming experiences for Twitch and other platforms with custom overlays and tools.</p>
+                </div>
+                <div class="service-card" data-category="media">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 11C17.1046 11 18 10.1046 18 9C18 7.89543 17.1046 7 16 7C14.8954 7 14 7.89543 14 9C14 10.1046 14.8954 11 16 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21 11V17C21 18.6569 19.6569 20 18 20H6C4.34315 20 3 18.6569 3 17V11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 11V7C15 5.34315 13.6569 4 12 4C10.3431 4 9 5.34315 9 7V11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Digital Marketing</h3>
+                    <p class="service-description">Driving engagement and growth through strategic social media campaigns and digital advertising.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Projects</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="projects-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="games">Games</button>
+                <button class="filter-btn" data-filter="software">Software</button>
+                <button class="filter-btn" data-filter="media">Media</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="games">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M20 10V14C20 17.3137 17.3137 20 14 20H10C6.68629 20 4 17.3137 4 14V10C4 6.68629 6.68629 4 10 4H14C17.3137 4 20 6.68629 20 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Project Alpha</h3>
+                        <p class="project-category">Game Development</p>
+                        <p class="project-description">An immersive first-person adventure game with innovative physics-based puzzles.</p>
+                    </div>
+                </div>
+                <div class="project-card" data-category="software">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V4C20 3.46957 19.7893 2.96086 19.4142 2.58579C19.0391 2.21071 18.5304 2 18 2H14Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Project Nexus</h3>
+                        <p class="project-category">Software Development</p>
+                        <p class="project-description">A productivity platform for creative teams with real-time collaboration tools.</p>
+                    </div>
+                </div>
+                <div class="project-card" data-category="media">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 10L21 4M21 4H17M21 4V8M15 10L9 16M9 16H5M9 16V12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Project Aurora</h3>
+                        <p class="project-category">Video Production</p>
+                        <p class="project-description">A cinematic short film exploring themes of technology and human connection.</p>
+                    </div>
+                </div>
+                <div class="project-card" data-category="games">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M20 10V14C20 17.3137 17.3137 20 14 20H10C6.68629 20 4 17.3137 4 14V10C4 6.68629 6.68629 4 10 4H14C17.3137 4 20 6.68629 20 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Project Horizon</h3>
+                        <p class="project-category">Game Development</p>
+                        <p class="project-description">An open-world survival game with procedurally generated environments.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Team</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="team-grid">
+                <!-- Team members will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy Section -->
+    <section id="privacy" class="privacy">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Privacy Policy</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="privacy-content">
+                <div class="privacy-section">
+                    <h3>Information Collection</h3>
+                    <p>This website does not collect any personal information from visitors. We do not use cookies for tracking or analytics purposes unless explicitly consented to by the user.</p>
+                </div>
+                <div class="privacy-section">
+                    <h3>How Information Is Used</h3>
+                    <p>Since no information is collected, there is no usage of personal data. Any information entered through forms on this website is not stored or processed by our servers.</p>
+                </div>
+                <div class="privacy-section">
+                    <h3>Cookies</h3>
+                    <p>This website uses cookies only for essential functionality such as maintaining user preferences and session state. These are necessary for the site to function properly.</p>
+                    <p>Optional cookies (analytics, functional) are not used on this site but can be enabled by the user through cookie settings if they choose to consent to them.</p>
+                </div>
+                <div class="privacy-section">
+                    <h3>Analytics</h3>
+                    <p>No analytics tools or third-party tracking services are currently implemented on this website.</p>
+                </div>
+                <div class="privacy-section">
+                    <h3>Third Party Services</h3>
+                    <p>This website does not integrate with any third-party services that may collect or process personal data.</p>
+                </div>
+                <div class="privacy-section">
+                    <h3>Data Retention</h3>
+                    <p>As no data is collected, there is no data retention period to consider.</p>
+                </div>
+                <div class="privacy-section">
+                    <h3>User Rights</h3>
+                    <p>Users have the right to access, correct, or delete their personal information. Since no personal information is collected, these rights do not apply to this website.</p>
+                </div>
+                <div class="privacy-section">
+                    <h3>Contact Information</h3>
+                    <p>If you have any questions about this privacy policy or our practices, please contact us at: <a href="mailto:ceskynoobpr@proton.me">ceskynoobpr@proton.me</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p>Have a project in mind? Reach out to us for collaboration opportunities.</p>
+                    <div class="contact-email">
+                        <span>Email:</span>
+                        <a href="mailto:ceskynoobpr@proton.me" class="email-link">ceskynoobpr@proton.me</a>
+                        <button id="copy-email" class="btn btn-outline btn-small">Copy Email</button>
+                    </div>
+                </div>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>CeskynoobProductions</h3>
+                </div>
+                <div class="footer-links">
+                    <a href="#home" class="footer-link">Home</a>
+                    <a href="#about" class="footer-link">About</a>
+                    <a href="#services" class="footer-link">Services</a>
+                    <a href="#projects" class="footer-link">Projects</a>
+                    <a href="#team" class="footer-link">Team</a>
+                    <a href="#privacy" class="footer-link">Privacy</a>
+                    <a href="#contact" class="footer-link">Contact</a>
+                </div>
+                <div class="footer-contact">
+                    <p>Email: <a href="mailto:ceskynoobpr@proton.me">ceskynoobpr@proton.me</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>all rights served 2026 ©️</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
